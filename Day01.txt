@@ -1,0 +1,58 @@
+HTTP - Hyper Text Transfer Protocol
+
+Difference between HTTP1.1 vs HTTP2:
+HTTP 1.1:
+1. It works on the textual format
+2. There is a head of line bloocking  that blocks all the requests behind it until dosen't get all the resources
+3. It uses requests resource inlining for use getting multiple pages
+4. It compreses data by itself
+
+HTTP 2:
+1. It works on binary Protocol
+2. It allows multiplexing so one TCP connection is required for mulltiple requests
+3. It uses PUSH frame by server that collects all multiple pages
+4. It uses HPACK for data compression
+
+Object and its internal representation in javascript:
+Objects:
+1. Objects are key: value pair
+2. It can store any type of data type (Number,string, boolean)
+3. Syntax:
+            objectName = {Name:"Gowtham"}
+4. Example: 
+            var object = {
+                name:"gowtham",
+                age:27,
+                year:1996
+            }            
+5. we can access the objects by key eg: object.Name = gowtham
+6. we can access the objects by two ways,
+    box method
+    dot method
+7. Dot method :
+                It is the common method to access the objects
+console.log(object.year); => 1996
+console.lo(object.age); => 27
+
+we can able to add an object by 
+object.gender("Male") =>
+        var object = {
+             name:"gowtham",
+                age:27,
+                year:1996,
+                gender:Male
+        }
+8. Box Method:
+                It should be used in (For in loop)        
+This loop dosen't have termination it will run continuously until the end of the object
+Syntax:
+        for (var Key in objectName){}
+Example: 
+        for ( var i in obj){
+            console.log(object[i]);
+        }
+output:
+gowtham
+27
+1996
+male        
